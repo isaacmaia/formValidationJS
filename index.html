@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+
+    <form name="form" id="formulario">
+       
+        <h1>Validação de Formulário em JavaScript ! </h1>
+
+        <div id="nome">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nom" name="nome" maxlength="50" size="50">
+        </div>
+
+        <div id="email">
+            <label for="email">E-mail:</label>
+            <input type="email" id="eml" name="email" placeholder="exemplo@exemplo.com"></input>
+        </div>
+
+        <div id="cep">
+            <label for="cep">CEP:</label>
+            <input type="text" id="ocep" name="ocep" maxlength="8" placeholder="12.123-123">
+        </div>
+
+        <div id="endereco">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="ende" name="ende" maxlength="50" size="50">
+        </div>
+
+        <div id="numero">
+            <label for="numero">Número:</label>
+            <input type="text" id="num" name="num">
+        </div>
+
+        <div id="cpf">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="ocpf" maxlength="11" placeholder="xxx.xxx.xxx-xx" name="ocpf">
+        </div>
+
+        <div id="rg">
+            <label for="rg">RG:</label>
+            <input type="text" id="erg" maxlength="9" placeholder="xx.xxx.xxx-x" name="erg">
+        </div>
+
+        <div id="estado">
+            <label for="estado">Estado:</label>
+            <select name="estado">
+                <option></option>
+                
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+            </select>
+        </div>
+
+        <div id="cidade">
+            <label for="cidade">Cidade:</label>
+            <select name="cidade">
+                <option></option>
+
+                <option class="cidade" name="SP" value="Jales" hidden>Jales</option>
+                <option class="cidade" name="SP" value="Urânia" hidden>Urânia</option>
+                <option class="cidade" name="SP" value="São Paulo" hidden>São Paulo</option>
+                
+                <option class="cidade" name="RJ" value="Angra dos Reis" hidden>Angra dos Reis</option>
+                <option class="cidade" name="RJ" value="Duque de Caxias" hidden>Duque de Caxias</option>
+                <option class="cidade" name="RJ" value="Rio de Janeiro" hidden>Rio de Janeiro</option>
+
+            </select>
+        </div>
+
+        <div id="data">
+            <label for="data">Data de Nascimento:</label>
+            <input type="text" id="dat" name="dat" maxlength="8" placeholder="01/01/1990">
+        </div>
+
+        <div id="sexo">
+            <label for="sexo">Sexo :</label>
+            <input type="radio" name="sexo" value="Masculino">Masculino</input>
+            <input type="radio" name="sexo" value="Feminino">Feminino</input>
+        </div>
+
+        <div id="telefone">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="tele" name="tel" maxlength="10" placeholder="(xx) xxxx-xxxx"></input>
+        </div>
+
+        <input type="button" value="Enviar" id="submit">
+        </form>
+
+        <div id="validacao">
+        </div>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
